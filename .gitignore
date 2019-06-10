@@ -1,0 +1,6 @@
+.idea
+.env
+vendor
+node_modules
+mix-manifest.json
+public/assets/css/app.css
