@@ -3,3 +3,15 @@
 @tailwind components;
 
 @tailwind utilities;
+
+body{
+  @apply font-sans;
+}
+
+h1, h2, h3, h4, h5{
+  @apply font-serif text-lg;
+}
+
+p{
+  @apply text-base;
+}
