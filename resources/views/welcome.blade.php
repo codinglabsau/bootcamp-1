@@ -16,6 +16,6 @@
     <h1>Find movies online</h1>
     <h1>Find movies online</h1>
     <h1>Find movies online</h1>
-    <h1>Find movies online</h1>
+    <h1>test</h1>
 </div>
 @endsection
