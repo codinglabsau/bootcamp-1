@@ -1,0 +1,44 @@
+// Tailwind CSS
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body{
+    @apply max-w-8xl mx-auto;
+}
+
+header{
+    @apply py-4 bg-dark-grey;
+
+}
+
+nav {
+    @apply flex justify-between px-8 items-center;
+}
+
+nav h1.logo{
+    @apply text-4xl text-yellow-ish;
+}
+
+.search{
+    @apply rounded-lg shadow py-4 flex;
+}
+
+.search, input{
+    @apply border-light-grey bg-light-grey text-white px-2;
+}
+
+.search, button:focus{
+    @apply outline-none border-light-grey;
+}
+
+footer{
+    @apply bg-dark-grey text-center py-2 text-grey;
+}
+
+.content {
+    @apply py-4 px-8;
+}
