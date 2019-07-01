@@ -5,6 +5,7 @@
 @section('content')
 <div class="content">
     <h1>Find movies online</h1>
+    <!--
     <div class="flex">
         <ul class="flex">
             <li class="alphabetSorter">
@@ -43,5 +44,24 @@
             <li class="alphabetSorter">Z </li>
         </ul>
     <div>
+    -->
+    <?php
+        echo "<ul class=\"flex\">";
+            echo "<li class=\"alphabetSorter\">"."All";
+            echo "</li>";
+            echo "<li class=\"alphabetSorter\">"."#";
+            echo "</li>";
+            $i = 65;
+            $c = chr($i);
+            while ($i < 91)
+            {
+                $c = chr($i);
+                echo "<li class=\"alphabetSorter\">".$c;
+                echo "</li>";
+                $i += 1;
+            }
+        echo "</ul>";
+    ?>
+
 </div>
 @endsection
