@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateActorsTable extends Migration
+class CreateActorMovieTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,11 +15,8 @@ class CreateActorsTable extends Migration
     {
         Schema::create('actors', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->text('bio');
-            $table->string('image');
+            $table->string('actor');
             $table->string('movie');
-            $table->integer('quote_id')->unsigned();
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreateActorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('actors');
+        //
     }
 }
