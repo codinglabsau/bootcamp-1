@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Lupita Nyongos')
+@section('title', 'John Turturro')
 
 @section('content')
     <div class="content">
