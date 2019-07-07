@@ -13,7 +13,7 @@ class CreateActorMovieTable extends Migration
      */
     public function up()
     {
-        Schema::create('actorMovies', function (Blueprint $table) {
+        Schema::create('actor_movies', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('actor');
             $table->string('movie');
