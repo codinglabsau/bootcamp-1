@@ -9,7 +9,7 @@ class Actor extends Model
     protected $fillable = [
         'name', 'bio', 'movies'
     ];
-
+  
     /** belongsToMany movies */
     public function movie() {
         return $this->belongsToMany(Movie::class, 'movie_id');
