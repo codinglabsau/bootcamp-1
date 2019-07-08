@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 Route::get('/moviePage', function () {
     return view('moviePage');
 });
+=======
+Route::get('/actors/nyongo', function () {
+   return view('actors.nyongo');
+});
+>>>>>>> 9328921fcb33bd20abf7ace30d0ded6a9dc0758e
