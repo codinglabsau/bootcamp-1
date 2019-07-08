@@ -4,6 +4,7 @@
 @section('title', 'Movie Detail')
     
 @section('content')
+<div class="content">
     <a class="m-4" href="/">
       <span class="mr-2">&lang;</span>
       <span class="text-blue-600 hover:text-indigo-900">Back to Index</span>
@@ -60,4 +61,5 @@
                 </div>
             </div>
       </div>
+</div>
 @endsection
