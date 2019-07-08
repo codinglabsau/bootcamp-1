@@ -11,12 +11,7 @@ body{
 }
 
 header{
-<<<<<<< HEAD
-    @apply py-4 bg-dark-grey;
-=======
     @apply h-24 z-50 fixed w-full;
-
->>>>>>> 9328921fcb33bd20abf7ace30d0ded6a9dc0758e
 }
 
 nav {
@@ -48,14 +43,6 @@ footer{
 }
 
 .content {
-<<<<<<< HEAD
-    @apply py-4 px-8 text-grey text-xl;
-}
-
-.alphabetSorter {
-    @apply p-2 text-lg
-}
-=======
     @apply pt-24 pb-4 px-8 max-w-7xl mx-auto;
 }
 
@@ -111,4 +98,3 @@ tr {
 tr:nth-child(even){
     @apply bg-grey-200;
 }
->>>>>>> 9328921fcb33bd20abf7ace30d0ded6a9dc0758e

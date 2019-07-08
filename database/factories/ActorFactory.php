@@ -2,11 +2,14 @@
 
 /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
-use App\Model;
+use App\Actor;
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(Actor::class, function (Faker $faker) {
     return [
-        //
+        'name' => $faker->name,
+        'bio' => $faker->text(),
+        'image' => 'images/lupita.jpg',
+        'quote_id' => 2
     ];
 });

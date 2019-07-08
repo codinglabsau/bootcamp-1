@@ -11,6 +11,8 @@ class ActorsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\Actor::class)->create([
+            'name' => 'Lupita Nyongo'
+        ]);
     }
 }

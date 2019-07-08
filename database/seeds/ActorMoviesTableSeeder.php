@@ -11,6 +11,6 @@ class ActorMoviesTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\ActorMovie::class)->create();
     }
 }

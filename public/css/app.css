@@ -7928,15 +7928,6 @@ footer {
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-<<<<<<< HEAD
-  color: #5C5C5C;
-  font-size: 1.25rem;
-}
-
-.alphabetSorter {
-  padding: 0.5rem;
-  font-size: 1.125rem;
-=======
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -8013,7 +8004,6 @@ tr {
 
 tr:nth-child(even) {
   background-color: #d0d2d8;
->>>>>>> 9328921fcb33bd20abf7ace30d0ded6a9dc0758e
 }
 
 @media (min-width: 640px) {

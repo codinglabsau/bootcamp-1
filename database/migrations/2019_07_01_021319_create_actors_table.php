@@ -18,7 +18,6 @@ class CreateActorsTable extends Migration
             $table->string('name');
             $table->text('bio');
             $table->string('image');
-            $table->string('movie');
             $table->integer('quote_id')->unsigned();
             $table->timestamps();
         });
