@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Movie;
+
+Route::resource('movie', 'MovieController');
 
 Route::get('/', function () {
     return view('welcome');
@@ -22,3 +25,9 @@ Route::get('/moviePage', function () {
 Route::get('/actors/nyongo', function () {
    return view('actors.nyongo');
 });
+
+
+Auth::routes();
+
+Route::get('/', 'MovieController@index');
+Route::get('/moviePage/{id}', 'MovieController@show')->name('moviePage');

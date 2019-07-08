@@ -2,23 +2,23 @@
 @extends ('layout')
 
 @section('title', 'Movie Detail')
-    
+
 @section('content')
 <div class="content">
     <a class="m-4" href="/">
       <span class="mr-2">&lang;</span>
       <span class="text-blue-600 hover:text-indigo-900">Back to Index</span>
     </a>
-    <div class="flex m-4 container">      
+    <div class="flex m-4 container">
           <div class="flex-1 border-solid border-4 border-black bg-black image">
-            <img src="https://cfm.yidio.com/images/movie/148867/poster-360x540.jpg" alt="">
+            <img src="{{$movies->image}}" alt="">
           </div>
           <div class="flex-1 m-4 description">
-              <h1 class="text-4xl text-gray-700 title">Aladdin</h1> 
-                <div class="py-1 pad-vertical"> 
+              <h1 class="text-4xl text-gray-700 title">Aladdin</h1>
+                <div class="py-1 pad-vertical">
                         <div class="py-3">
                           <p class=" text-gray-800 ">In this musical adventure, a street kid in a fantastical Arabian city enlists the help of a genie to win the affections of a princess.</p>
-                          <p class=" text-gray-800 ">He also has to fight off the evil plot of the Sultan's nefarious advisor.</p> 
+                          <p class=" text-gray-800 ">He also has to fight off the evil plot of the Sultan's nefarious advisor.</p>
                           <p class=" text-gray-800 ">This live-action/CGI film is a remake of Disney's animated original.</p>
                         </div>
                 </div>

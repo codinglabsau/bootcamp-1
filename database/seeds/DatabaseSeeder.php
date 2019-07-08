@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+//use database\seeds\MoviesTableSeeder;
 
 class DatabaseSeeder extends Seeder
 {

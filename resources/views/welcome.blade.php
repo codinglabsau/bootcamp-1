@@ -43,8 +43,8 @@
             <li class="alphabetSorter">Y </li>
             <li class="alphabetSorter">Z </li>
         </ul>
-    <div>
-    -->
+    <div> -->
+
     <?php
         echo "<ul class=\"flex\">";
             echo "<li class=\"alphabetSorter\">"."All";
@@ -62,6 +62,14 @@
             }
         echo "</ul>";
     ?>
-
+    <div class="flex mb-4">
+        @foreach($movies as $movie)
+        <div class="movie">
+            <a href="{{route('moviePage', ['movie' => $movie->id ])}}"><img src="{{ $movie -> image }}" alt="{{ $movie -> title}}" href=""></a>
+            <a href="{{route('moviePage', ['movie' => $movie->id ])}}" class="movie">{{ $movie -> title }}</a>
+        </div>
+        @endforeach
+    </div>
 </div>
+
 @endsection

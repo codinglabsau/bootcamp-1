@@ -102,3 +102,15 @@ tr:nth-child(even){
 .alphabetSorter {
     @apply p-2 text-lg
 }
+
+.movie, img {
+    @apply pr-4 h-40 w-40;
+}
+
+.movie, a {
+    @apply text-center ;
+}
+
+.movie, a:focus{
+    @apply outline-none;
+}
