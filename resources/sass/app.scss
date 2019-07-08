@@ -12,7 +12,6 @@ body{
 
 header{
     @apply py-4 bg-dark-grey;
-
 }
 
 nav {
@@ -40,5 +39,9 @@ footer{
 }
 
 .content {
-    @apply py-4 px-8;
+    @apply py-4 px-8 text-grey text-xl;
+}
+
+.alphabetSorter {
+    @apply p-2 text-lg
 }

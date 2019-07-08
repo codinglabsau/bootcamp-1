@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Quote extends Model
 {
-    /** belongs to a quote */ 
+    /** belongs to a actor */ 
     public function actor()
     {
         return $this->belongsTo(QuActor::class);

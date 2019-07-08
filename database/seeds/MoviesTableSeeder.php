@@ -12,15 +12,18 @@ class MoviesTableSeeder extends Seeder
     public function run()
     {
         factory(App\Movie::class)->create([
-            'title' => 'US'
+            'title' => 'US',
+            'image' => 'images/Us.png'
         ]);
 
         factory(App\Movie::class)->create([
-            'title' => 'Aladdin'
+            'title' => 'Aladdin',
+            'image' => 'images/Aladdin.jpg'
         ]);
 
         factory(App\Movie::class)->create([
-            'title' => 'Zohan'
+            'title' => 'Zohan',
+            'image' => 'images/Zohan.jpg'
         ]);
     }
 }
