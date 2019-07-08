@@ -98,3 +98,7 @@ tr {
 tr:nth-child(even){
     @apply bg-grey-200;
 }
+
+.alphabetSorter {
+    @apply p-2 text-lg
+}

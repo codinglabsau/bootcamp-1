@@ -8006,6 +8006,11 @@ tr:nth-child(even) {
   background-color: #d0d2d8;
 }
 
+.alphabetSorter {
+  padding: 0.5rem;
+  font-size: 1.125rem;
+}
+
 @media (min-width: 640px) {
   .sm\:appearance-none {
     -webkit-appearance: none;
