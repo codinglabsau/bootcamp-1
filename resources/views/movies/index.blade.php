@@ -65,8 +65,8 @@
     <div class="flex mb-4">
         @foreach($movies as $movie)
         <div class="movie">
-            <a href="{{route('moviePage', ['movie' => $movie->id ])}}"><img src="{{ $movie -> image }}" alt="{{ $movie -> title}}" href=""></a>
-            <a href="{{route('moviePage', ['movie' => $movie->id ])}}" class="movie">{{ $movie -> title }}</a>
+            <a href="{{ route('movies.show', $movie) }}"><img src="{{ $movie -> image }}" alt="{{ $movie -> title}}" href=""></a>
+            <a href="{{ route('movies.show', $movie) }}" class="movie">{{ $movie -> title }}</a>
         </div>
         @endforeach
     </div>

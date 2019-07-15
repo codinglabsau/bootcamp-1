@@ -12,22 +12,10 @@
 */
 use App\Movie;
 
-Route::resource('movie', 'MovieController');
-
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/moviePage', function () {
-    return view('moviePage');
-});
-
-Route::get('/actors/nyongo', function () {
-   return view('actors.nyongo');
-});
-
-
 Auth::routes();
 
-Route::get('/', 'MovieController@index');
-Route::get('/moviePage/{id}', 'MovieController@show')->name('moviePage');
+Route::get('/', 'MovieController@index')->name('movies.index');
+Route::get('/movies/{movie}', 'MovieController@show')->name('movies.show');

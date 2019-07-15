@@ -11,12 +11,12 @@ class Actor extends Model
     ];
   
     /** belongsToMany movies */
-    public function movie() {
-        return $this->belongsToMany(Movie::class, 'movie_id');
+    public function movies() {
+        return $this->belongsToMany(Movie::class);
     }
 
     /** hasMany quote */
-    public function quote() {
-        return $this->hasMany(Quote::class, 'quote_id');
+    public function quotes() {
+        return $this->hasMany(Quote::class);
     }
 }

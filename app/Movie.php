@@ -7,14 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Movie extends Model
 {
     /** has many quotes */
-    public function quote()
+    public function quotes()
     {
-        return $this->hasMany(Quote::class, 'quote_id');
+        return $this->hasMany(Quote::class);
     }
 
     /** has many actors */
-    public function actor()
+    public function actors()
     {
-        return $this->hasMany(Actor::class, 'actor_id');
+        return $this->hasMany(Actor::class);
     }
 }

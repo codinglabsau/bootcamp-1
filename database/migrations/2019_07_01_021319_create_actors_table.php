@@ -20,7 +20,6 @@ class CreateActorsTable extends Migration
             $table->string('image');
             $table->integer('quote_id')->unsigned();
             $table->timestamps();
-        });
     }
 
     /**
