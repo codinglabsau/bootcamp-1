@@ -10,8 +10,8 @@
       <span class="text-blue-600 hover:text-indigo-900">Back to Index</span>
     </a>
     <div class="flex m-4 container">
-          <div class="flex-1 border-solid border-4 border-black bg-black image">
-            <img class="w-full h-auto" src="{{$movie->image}}" alt="">
+          <div class="flex-1 image">
+            <img class="w-full" src="{{$movie->image}}" alt="">
           </div>
           <div class="flex-1 m-4 description">
               <h1 class="text-4xl text-gray-700 title">{{$movie->title}}</h1>

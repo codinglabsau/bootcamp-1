@@ -11,7 +11,7 @@
             <div class="search">
                 <input type="text" name="search" placeholder="Search for movies">
                 <button>
-                    <img src="/css/images/search.png" class="h-8 w-12 self-center">
+                    <img src="/css/images/search.png" class="h-8 w-8 self-center">
                 </button>
             </div>
         </nav>

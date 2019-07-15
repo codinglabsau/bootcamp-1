@@ -17,4 +17,16 @@ class Movie extends Model
     {
         return $this->hasMany(Actor::class);
     }
+
+    /** has one director */
+    public function director()
+    {
+        return $this->hasOne(Director::class, 'director_id');
+    }
+
+    /** has many actors */
+    public function Language()
+    {
+        return $this->hasOne(Language::class, 'language_id');
+    }
 }

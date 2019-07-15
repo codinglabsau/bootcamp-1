@@ -10,6 +10,5 @@ $factory->define(Movie::class, function (Faker $faker) {
         'title' => $faker->title,
         'description' => $faker->text(),
         'image' => 'images/search.png',
-        'quote_id' => 1,
     ];
 });

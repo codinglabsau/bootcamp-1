@@ -7894,20 +7894,21 @@ nav h1.logo {
   display: flex;
 }
 
-.search, input {
+.search input {
   border-color: #535456;
-  background-color: #535456;
+  background-color: #42454F;
   color: #fff;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.search, input:focus {
+.search input:focus {
   outline: 0;
   border-color: #535456;
+  color: #535456;
 }
 
-.search, button:focus {
+.search button:focus {
   outline: 0;
   border-color: #535456;
 }
@@ -8011,18 +8012,10 @@ tr:nth-child(even) {
   font-size: 1.125rem;
 }
 
-.movie, img {
+.movie img {
   padding-right: 1rem;
-  height: 10rem;
   width: 10rem;
-}
-
-.movie, a {
-  text-align: center;
-}
-
-.movie, a:focus {
-  outline: 0;
+  height: 10rem;
 }
 
 @media (min-width: 640px) {

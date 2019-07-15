@@ -13,7 +13,7 @@ class MoviesTableSeeder extends Seeder
     {
         factory(App\Movie::class)->create([
             'title' => 'US',
-            'image' => '/css/images/Us.png'
+            'image' => '/css/images/Us.png',
         ]);
 
         factory(App\Movie::class)->create([

@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-//use database\seeds\MoviesTableSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,5 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call(QuotesTableSeeder::class);
         $this->call(ActorsTableSeeder::class);
         $this->call(ActorMoviesTableSeeder::class);
+        $this->call(DirectorsTableSeeder::class);
+        $this->call(LanguagesTableSeeder::class);
     }
 }

@@ -10,6 +10,5 @@ $factory->define(Actor::class, function (Faker $faker) {
         'name' => $faker->name,
         'bio' => $faker->text(),
         'image' => 'images/lupita.jpg',
-        'quote_id' => 2
     ];
 });

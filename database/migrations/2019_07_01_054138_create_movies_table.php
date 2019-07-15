@@ -18,7 +18,6 @@ class CreateMoviesTable extends Migration
             $table->text('title');
             $table->string('description');
             $table->string('image');
-            $table->integer('quote_id')->unsigned();
             $table->timestamps();
         });
     }
