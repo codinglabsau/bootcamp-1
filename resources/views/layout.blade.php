@@ -16,7 +16,7 @@
             </div>
         </nav>
     </header>
-
+    
     @yield('content')
 
     <footer>
