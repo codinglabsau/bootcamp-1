@@ -7,16 +7,15 @@
 @tailwind utilities;
 
 body{
-    @apply max-w-8xl mx-auto;
+    @apply bg-grey-050;
 }
 
 header{
-    @apply py-4 bg-dark-grey;
-
+    @apply h-24 z-50 fixed w-full;
 }
 
 nav {
-    @apply flex justify-between px-8 items-center;
+    @apply flex max-w-7xl mx-auto bg-dark-grey justify-between px-8 py-2 items-center leading-loose;
 }
 
 nav h1.logo{
@@ -27,18 +26,84 @@ nav h1.logo{
     @apply rounded-lg shadow py-4 flex;
 }
 
-.search, input{
-    @apply border-light-grey bg-light-grey text-white px-2;
+.search input{
+    @apply border-light-grey bg-dark-grey text-white px-2;
 }
 
-.search, button:focus{
+.search input:focus{
+    @apply outline-none border-light-grey text-light-grey;
+}
+
+.search button:focus{
     @apply outline-none border-light-grey;
 }
 
 footer{
-    @apply bg-dark-grey text-center py-2 text-grey;
+    @apply bg-dark-grey text-center py-2 text-grey max-w-7xl mx-auto;
 }
 
 .content {
-    @apply py-4 px-8;
+    @apply pt-24 pb-4 px-8 max-w-7xl mx-auto;
 }
+
+h1{
+    @apply font-serif text-xl;
+}
+
+h2, h3, h4, h5{
+    @apply font-serif text-lg;
+}
+
+span{
+    @apply text-blue-700;
+}
+
+.bio {
+    @apply mb-4 max-w-6xl;
+}
+
+.bio a {
+    @apply font-semibold text-grey;
+}
+
+.bio p{
+    @apply px-2 py-2 mt-2 bg-grey-100 shadow-md whitespace-pre-line;
+}
+
+
+.overview{
+    @apply mb-4;
+}
+
+.overview a{
+    @apply font-semibold text-grey;
+}
+
+table {
+    @apply mt-2;
+}
+
+th{
+    @apply w-40 text-left font-normal text-grey;
+}
+
+td {
+    @apply px-2;
+}
+
+tr {
+    @apply px-2 py-2 bg-grey-100 shadow;
+}
+
+tr:nth-child(even){
+    @apply bg-grey-200;
+}
+
+.alphabetSorter {
+    @apply p-2 text-lg;
+}
+
+.movie img {
+    @apply pr-4 w-40 h-40;
+}
+
