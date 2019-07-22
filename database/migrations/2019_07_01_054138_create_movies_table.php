@@ -18,6 +18,8 @@ class CreateMoviesTable extends Migration
             $table->text('title');
             $table->string('description');
             $table->string('image');
+            $table->integer('director_id');
+            $table->integer('language_id');
             $table->timestamps();
         });
     }

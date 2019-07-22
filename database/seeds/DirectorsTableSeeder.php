@@ -20,5 +20,10 @@ class DirectorsTableSeeder extends Seeder
             'name' => 'Guy Ritchie',
             'movie_id'=> 2
         ]);
+
+        factory(App\Director::class)->create([
+            'name' => 'Dennis Dugan',
+            'movie_id'=> 3
+        ]);
     }
 }

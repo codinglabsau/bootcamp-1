@@ -20,7 +20,7 @@
     @yield('content')
 
     <footer>
-        <p> Molestias totam et quia. Architecto aut explicabo delectus odio odit veritatis. Atque aut illo quis. Modi tenetur alias sed nihil commodi reiciendis consequatur quaerat.  </p>
+        <p> CodingLabs Pty &reg;  </p>
     </footer>
 </body>
 </html>

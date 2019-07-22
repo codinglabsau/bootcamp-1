@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::get('/', 'MovieController@index')->name('movies.index');
 Route::get('/movies/{movie}', 'MovieController@show')->name('movies.show');
+Route::get('/actors/{actor}', 'MovieController@actorPage')->name('actors.actorPage');

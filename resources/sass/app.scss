@@ -54,10 +54,6 @@ h2, h3, h4, h5{
     @apply font-serif text-lg;
 }
 
-span{
-    @apply text-blue-700;
-}
-
 .bio {
     @apply mb-4 max-w-6xl;
 }
@@ -76,7 +72,31 @@ span{
 }
 
 .overview a{
-    @apply font-semibold text-grey;
+    @apply font-semibold text-blue-700;
+}
+
+.overview a:hover{
+    @apply underline;
+}
+
+.details table {
+    @apply mt-2;
+}
+
+.details th{
+    @apply w-40 text-left font-normal text-grey;
+}
+
+.details td {
+    @apply px-2;
+}
+
+.details tr {
+    @apply px-2 py-2 bg-grey-100 shadow;
+}
+
+.details tr:nth-child(even){
+    @apply bg-grey-200;
 }
 
 table {
@@ -84,19 +104,19 @@ table {
 }
 
 th{
-    @apply w-40 text-left font-normal text-grey;
+    @apply w-40 text-left font-normal font-bold;
 }
 
 td {
     @apply px-2;
 }
 
-tr {
-    @apply px-2 py-2 bg-grey-100 shadow;
+td a span {
+    @apply text-blue-700;
 }
 
-tr:nth-child(even){
-    @apply bg-grey-200;
+td a span:hover {
+    @apply underline;
 }
 
 .alphabetSorter {
@@ -105,5 +125,21 @@ tr:nth-child(even){
 
 .movie img {
     @apply pr-4 w-40 h-40;
+}
+
+.movie {
+    @apply flex flex-row;
+}
+
+.title {
+    @apply flex text-center;
+}
+
+.quote {
+    @apply text-blue-700;
+}
+
+.quote:hover{
+    @apply underline;
 }
 
