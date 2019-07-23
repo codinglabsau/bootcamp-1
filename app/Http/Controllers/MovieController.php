@@ -4,9 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Actor;
 use App\Movie;
-use App\Quote;
-use App\ActorMovie;
-use Illuminate\Http\Request;
 
 class MovieController extends Controller
 {
@@ -31,14 +28,12 @@ class MovieController extends Controller
     public function show(Movie $movie, Actor $actor)
     {
         $movie->load('actors');
-        $movie->load('quotes', 'quotes.actor');
-        $actor->load('quotes');
+        $movie->load('quotes');
 
         $director = $movie->director;
         $language = $movie->language;
         $actors = $movie->actors;
         $quotes = $movie->quotes;
-//        dd($quotes);
 
 
         return view('movies.show')->with(compact('movie', 'director', 'language', 'actors', 'quotes'));

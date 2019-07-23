@@ -1,12 +1,12 @@
 @extends('layout')
 
-@section('title', '{{ $actor->name }}')
+@section('title', $actor->name)
 
 @section('content')
     <div class="content">
         <div class="actor-content">
             <ul class="flex py-4 text-blue-500">
-                <a class="pl-0 px-2 border-r-2">Actor</a>
+                <h2 class="pl-0 px-2 border-r-2">Actor</h2>
             </ul>
             <div class="flex mb-8">
                 <img src="{{ $actor->image }}" class="rounded">
@@ -17,7 +17,7 @@
             </div>
 
             <div class="overview">
-                <a>Overview</a>
+                <h2>Overview</h2>
                 <table class="details lg:max-w-6xl">
                     <tr class="flex lg:flex">
                         <th>Born:</th>
@@ -46,7 +46,7 @@
             </div>
 
             <div class="bio">
-                <a>Bio</a>
+                <h2>Bio</h2>
                 <p>{{ $actor->bio }}</p>
             </div>
         </div>

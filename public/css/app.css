@@ -7947,6 +7947,7 @@ h2, h3, h4, h5 {
 .bio {
   margin-bottom: 1rem;
   max-width: 72rem;
+  color: #5C5C5C;
 }
 
 .bio a {
@@ -7967,6 +7968,7 @@ h2, h3, h4, h5 {
 
 .overview {
   margin-bottom: 1rem;
+  color: #5C5C5C;
 }
 
 .overview a {
@@ -8045,15 +8047,18 @@ td a span:hover {
 .movie {
   display: -webkit-box;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: row;
+          flex-direction: column;
 }
 
-.title {
-  display: -webkit-box;
-  display: flex;
+.movie a {
+  color: #2b6cb0;
   text-align: center;
+}
+
+.movie a:hover {
+  text-decoration: underline;
 }
 
 .quote {

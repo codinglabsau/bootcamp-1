@@ -61,16 +61,18 @@
         }
         echo "</ul>";
         ?>
-        @foreach($movies as $movie)
-            <div class="movie">
-                <a href="{{ route('movies.show', $movie) }}">
-                    <img src="{{ $movie -> image }}" alt="{{ $movie -> title}}">
-                </a>
-                <a href="{{ route('movies.show', $movie) }}">
-                    {{ $movie -> title }}
-                </a>
-            </div>
-        @endforeach
+        <div class="flex">
+            @foreach($movies as $movie)
+                <div class="movie">
+                    <a href="{{ route('movies.show', $movie) }}">
+                        <img src="{{ $movie -> image }}" alt="{{ $movie -> title}}">
+                    </a>
+                    <a href="{{ route('movies.show', $movie) }}">
+                        {{ $movie -> title }}
+                    </a>
+                </div>
+            @endforeach
+        </div>
     </div>
 
 @endsection

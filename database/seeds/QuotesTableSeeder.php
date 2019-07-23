@@ -63,7 +63,7 @@ class QuotesTableSeeder extends Seeder
 
         factory(App\Quote::class)->create([
             'actor_id' => \App\Actor::where('name', 'John Turturro')->first()->id,
-            'movie_id' => \App\Movie::where('title', 'Zohan')->first()->id
+            'movie_id' => \App\Movie::where('title', 'Aladdin')->first()->id
         ]);
     }
 }
