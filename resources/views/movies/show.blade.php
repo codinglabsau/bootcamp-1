@@ -71,7 +71,7 @@
                     @foreach($quotes as $quote)
                         <p>
                             {{ $quote->quote }}-
-                            <a href="{{ route('actors.actorPage', $quote) }}" class="quote">
+                            <a href="{{ route('actors.actorPage', $quote->actor) }}" class="quote">
                                 {{ $quote->actor->name }}
                             </a>
                         </p><br>

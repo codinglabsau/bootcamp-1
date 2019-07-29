@@ -65,5 +65,14 @@ class QuotesTableSeeder extends Seeder
             'actor_id' => \App\Actor::where('name', 'John Turturro')->first()->id,
             'movie_id' => \App\Movie::where('title', 'Aladdin')->first()->id
         ]);
+        factory(App\Quote::class)->create([
+            'actor_id' => \App\Actor::where('name', 'Lupita Nyongo')->first()->id,
+            'movie_id' =>  \App\Movie::where('title', 'US')->first()->id
+        ]);
+
+        factory(App\Quote::class)->create([
+            'actor_id' => \App\Actor::where('name', 'Lupita Nyongo')->first()->id,
+            'movie_id' =>  \App\Movie::where('title', 'Aladdin')->first()->id
+        ]);
     }
 }

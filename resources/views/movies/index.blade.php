@@ -1,6 +1,6 @@
 @extends ('layout')
 
-@section('title', 'Home')
+@section('title', 'CLMovieDB')
 
 @section('content')
     <div class="content">
