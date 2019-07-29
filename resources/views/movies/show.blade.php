@@ -58,7 +58,11 @@
                     <table class="lg:max-w-6xl">
                         <tr class="flex lg:flex">
                             <th>Director</th>
-                            <td class="flex-1">{{ $director->name }}</td>
+                            <td class="flex-1">
+                                <a href="{{ route('director.director', $director) }}">
+                                    <span>{{ $director->name }}</span>
+                                </a>
+                            </td>
                         </tr>
                         <tr class="flex lg:flex">
                             <th>Language</th>

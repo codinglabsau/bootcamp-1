@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Actor;
+use App\Director;
 use App\Movie;
 
 class MovieController extends Controller
@@ -45,7 +46,7 @@ class MovieController extends Controller
      * @param Actor $actor
      * @return \Illuminate\Http\Response
      */
-    public function actorPage(Actor $actor)
+    public function actor(Actor $actor)
     {
         $actor->load('movies');
 
@@ -53,5 +54,20 @@ class MovieController extends Controller
 
 
         return view('actors.actorPage')->with(compact('actor', 'movies'));
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param Director $director
+     * @return \Illuminate\Http\Response
+     */
+    public function director(Director $director)
+    {
+        $director->load('movies');
+
+        $movies = $director->movies;
+
+        return view('director.director')->with(compact('director', 'movies'));
     }
 }
