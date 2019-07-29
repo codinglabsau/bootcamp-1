@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb04eac1-dc4f-4f63-a989-64335cb1631a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Director.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Director.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MovieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Language.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Language.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/DirectorFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/DirectorFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_15_020627_create_directors_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_15_020627_create_directors_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DirectorsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DirectorsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/movies/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/movies/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="fb04eac1-dc4f-4f63-a989-64335cb1631a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MovieController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="566">
@@ -51,15 +42,6 @@
               <folding>
                 <element signature="e#40#54#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Director.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -379,7 +361,7 @@
       <option name="presentableId" value="Default" />
       <updated>1561352099891</updated>
       <workItem from="1561352102047" duration="11008000" />
-      <workItem from="1562019693768" duration="67945000" />
+      <workItem from="1562019693768" duration="68541000" />
     </task>
     <servers />
   </component>
@@ -407,7 +389,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78953000" />
+    <option name="totallyTimeSpent" value="79549000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -420,11 +402,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="379" y="171" width="2068" height="1207" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.24037512" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24037512" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995064" weight="0.329148" />
@@ -436,7 +417,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.50197434" side_tool="true" visible="true" weight="0.329148" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49802566" visible="true" weight="0.329148" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49802566" visible="true" weight="0.329148" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -857,6 +838,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Director.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MovieController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="566">
@@ -864,13 +852,6 @@
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Director.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
         </state>
       </provider>
     </entry>
