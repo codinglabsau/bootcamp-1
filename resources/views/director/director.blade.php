@@ -33,7 +33,7 @@
                         <td class="flex-1">{{ $director->height }}</td>
                     </tr>
                     <tr class="flex lg:flex">
-                        <th>Movies acted in:</th>
+                        <th>Movies Directed:</th>
                         @foreach($movies as $movie)
                             <td class="flex-1">
                                 <a href="{{ route('movies.show', $movie) }}">

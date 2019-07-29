@@ -2,18 +2,25 @@
 
 namespace Tests\Unit;
 
+use App\Actor;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ExampleTest extends TestCase
 {
+    use RefreshDatabase;
+
     /**
-     * A basic test example.
-     *
-     * @return void
+     * @test
      */
-    public function testBasicTest()
+    public function check_if_actor_exists()
     {
-        $this->assertTrue(true);
+        $actor = factory(Actor::class)->create([
+            'name' => 'Lupita Nyongo',
+            'bio' => 'gfgfghj'
+        ]);
+
+        $this->assertEquals($actor->name, 'Lupita Nyongo');
+        $this->assertTrue($actor->bio !== '');
     }
 }

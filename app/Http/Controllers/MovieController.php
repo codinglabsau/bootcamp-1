@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Actor;
-use App\Director;
 use App\Movie;
+use App\Director;
 
 class MovieController extends Controller
 {
@@ -53,7 +53,7 @@ class MovieController extends Controller
         $movies = $actor->movies;
 
 
-        return view('actors.actorPage')->with(compact('actor', 'movies'));
+        return view('actor.actorPage')->with(compact('actor', 'movies'));
     }
 
     /**
