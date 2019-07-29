@@ -16,7 +16,6 @@ class CreateDirectorsTable extends Migration
         Schema::create('directors', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->integer('movie_id')->unsigned();
             $table->timestamps();
         });
     }

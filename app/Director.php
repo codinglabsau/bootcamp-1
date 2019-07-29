@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Director extends Model
 {
-    /** hasMany movie */
+    /** belongsToMany movie */
     public function movies() {
-        return $this->hasMany(Movie::class);
+        return $this->belongsToMany(Movie::class);
     }
 }

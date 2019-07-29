@@ -13,17 +13,14 @@ class DirectorsTableSeeder extends Seeder
     {
         factory(App\Director::class)->create([
             'name' => 'Jordan Peele',
-            'movie_id'=> 1
         ]);
 
         factory(App\Director::class)->create([
             'name' => 'Guy Ritchie',
-            'movie_id'=> 2
         ]);
 
         factory(App\Director::class)->create([
             'name' => 'Dennis Dugan',
-            'movie_id'=> 3
         ]);
     }
 }

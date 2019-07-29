@@ -11,19 +11,6 @@ class LanguagesTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Language::class)->create([
-            'Language' => 'English',
-            'movie_id'=> 1
-        ]);
-
-        factory(App\Language::class)->create([
-            'Language' => 'English',
-            'movie_id'=> 2
-        ]);
-
-        factory(App\Language::class)->create([
-            'Language' => 'English',
-            'movie_id'=> 3
-        ]);
+        factory(App\Language::class)->create();
     }
 }

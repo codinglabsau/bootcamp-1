@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Actor;
 use App\Movie;
-use Illuminate\Http\Request;
 
 class MovieController extends Controller
 {
