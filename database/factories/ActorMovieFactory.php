@@ -7,7 +7,11 @@ use Faker\Generator as Faker;
 
 $factory->define(ActorMovie::class, function (Faker $faker) {
     return [
-        'actor_id' => 1,
-        'movie_id' => 1
+        'actor_id' => function () {
+            return factory(\App\ActorMovie::class)->create()->id;
+        },
+        'movie_id' => function () {
+            return factory(\App\ActorMovie::class)->create()->id;
+        }
     ];
 });

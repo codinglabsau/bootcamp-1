@@ -15,18 +15,18 @@ class Movie extends Model
     /** has many actors */
     public function actors()
     {
-        return $this->hasMany(Actor::class);
+        return $this->belongsToMany(Actor::class);
     }
 
     /** has one director */
     public function director()
     {
-        return $this->hasOne(Director::class, 'director_id');
+        return $this->belongsTo(Director::class);
     }
 
-    /** has many actors */
-    public function Language()
+    /** has many language */
+    public function language()
     {
-        return $this->hasOne(Language::class, 'language_id');
+        return $this->belongsTo(Language::class);
     }
 }

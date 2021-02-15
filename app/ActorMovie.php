@@ -2,17 +2,9 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class ActorMovie extends Model
+class ActorMovie extends Pivot
 {
-    /** hasMany movies */
-    public function movie() {
-        return $this->hasMany(Movie::class, 'movie_id');
-    }
-
-    /** hasMany actors */
-    public function actor() {
-        return $this->hasMany(Actor::class, 'actor_id');
-    }
+    //
 }

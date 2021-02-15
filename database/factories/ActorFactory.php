@@ -9,6 +9,9 @@ $factory->define(Actor::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
         'bio' => $faker->text(),
-        'image' => 'images/lupita.jpg',
+        'fullname' => '',
+        'born' => '',
+        'height' => '',
+        'image' => 'images/lupita.jpg'
     ];
 });

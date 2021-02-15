@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Actor;
 use App\Movie;
-use Illuminate\Http\Request;
+use App\Director;
 
 class MovieController extends Controller
 {
@@ -21,11 +22,52 @@ class MovieController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  Movie  $movie
+     * @param Movie $movie
+     * @param Actor $actor
      * @return \Illuminate\Http\Response
      */
-    public function show(Movie $movie)
+    public function show(Movie $movie, Actor $actor)
     {
-        return view('movies.show')->with('movie', $movie);
+        $movie->load('actors');
+        $movie->load('quotes');
+
+        $director = $movie->director;
+        $language = $movie->language;
+        $actors = $movie->actors;
+        $quotes = $movie->quotes;
+
+
+        return view('movies.show')->with(compact('movie', 'director', 'language', 'actors', 'quotes'));
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param Actor $actor
+     * @return \Illuminate\Http\Response
+     */
+    public function actor(Actor $actor)
+    {
+        $actor->load('movies');
+
+        $movies = $actor->movies;
+
+
+        return view('actor.actorPage')->with(compact('actor', 'movies'));
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param Director $director
+     * @return \Illuminate\Http\Response
+     */
+    public function director(Director $director)
+    {
+        $director->load('movies');
+
+        $movies = $director->movies;
+
+        return view('director.director')->with(compact('director', 'movies'));
     }
 }
